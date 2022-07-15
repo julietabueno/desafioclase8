@@ -37,12 +37,15 @@ const divUsuarios = document.getElementById("usuarios")
 usuarios.forEach(usuarioArray => {
     //Inserto un HTML creando una plantilla de texto para ahorrar codigo - TEMPLATE 
     divUsuarios.innerHTML += `
-    <div id="usuario${usuarioArray.id}" class ="datosUsuarios"> 
-        <p>Nombre: ${usuarioArray.nombreDeUsuario}</p>
-        <p>Apellido: ${usuarioArray.apellido}</p>
-        <p>$ en su cuenta: ${usuarioArray.pesosInvertidos}</p>
-        <p>u$s en su cuenta: ${usuarioArray.dolaresInvertidos}</p>
+    <div class="card usuarios" id="usuario${usuarioArray.id}" style="width: 18rem;">
+    <img src="img/fondoCrypto.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${usuarioArray.nombreDeUsuario} ${usuarioArray.apellido}</h5>
+      <p class="card-text"> $ ${usuarioArray.pesosInvertidos}</p>
+      <p class="card-text"> USD ${usuarioArray.dolaresInvertidos}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
+  </div>
     `
 })
 
