@@ -23,7 +23,7 @@ const divUsuarios = document.getElementById("usuarios")
 usuarios.forEach(usuarioArray => {
     //Inserto un HTML creando una plantilla de texto para ahorrar codigo - TEMPLATE 
     divUsuarios.innerHTML += `
-    <div class="cardUsuarios p-1" id="usuario${usuarioArray.id}" style="width: 18rem;">
+    <div class="cardUsuarios p-1 rounded" id="usuario${usuarioArray.id}" style="width: 18rem;">
     <img src="img/fondoCrypto.jpeg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${usuarioArray.nombreDeUsuario} ${usuarioArray.apellido}</h5>
