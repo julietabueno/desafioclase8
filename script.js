@@ -1,16 +1,3 @@
-/* const parrafo1 = document.getElementById("parrafo1");
-const parrafos = document.getElementsByClassName("parrafos")[0].children[0];
-
-const usuario = {nombreDeUsuario:"Julieta", password: "123456"}
-parrafo1.innerText= `Hola ${usuario.nombreDeUsuario}, buenos días!`
-parrafos.innerHTML += "<p>Hola coders</p>"
-
-
- */
-
-
-//primera entrega proyecto final
-
 //creo el constructor de Usuarios
 class Usuario {
     constructor(id, nombreDeUsuario = " ", apellido = " ", pesosInvertidos = 1, dolaresInvertidos = 1) {
@@ -21,7 +8,6 @@ class Usuario {
         this.dolaresInvertidos = dolaresInvertidos
     }
 }
-
 
 const usuario1 = new Usuario(1, "Julieta,", "Bueno", 20000, 500)
 const usuario2 = new Usuario(2, "Pablo,", "Destefano", 50000, 100)
@@ -37,13 +23,13 @@ const divUsuarios = document.getElementById("usuarios")
 usuarios.forEach(usuarioArray => {
     //Inserto un HTML creando una plantilla de texto para ahorrar codigo - TEMPLATE 
     divUsuarios.innerHTML += `
-    <div class="card usuarios" id="usuario${usuarioArray.id}" style="width: 18rem;">
+    <div class="cardUsuarios p-1" id="usuario${usuarioArray.id}" style="width: 18rem;">
     <img src="img/fondoCrypto.jpeg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${usuarioArray.nombreDeUsuario} ${usuarioArray.apellido}</h5>
       <p class="card-text"> $ ${usuarioArray.pesosInvertidos}</p>
       <p class="card-text"> USD ${usuarioArray.dolaresInvertidos}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-warning">Go somewhere</a>
     </div>
   </div>
     `

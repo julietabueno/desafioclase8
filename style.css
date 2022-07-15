@@ -1,9 +1,9 @@
 .navbar-brand{
-    color:chartreuse
+    color:rgb(245, 218, 43)
 }
 
-.datosUsuarios{
-    background-color: black;
+.cardUsuarios {
+    background-color:rgb(49, 5, 90);
     margin: 2%;
-    color: rgb(204, 12, 238);
+    color: rgb(226, 224, 226);
 }
